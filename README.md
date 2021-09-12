@@ -17,10 +17,4 @@ Generate project files
 premake5 (vs2019|gmake2|...)
 ```
 
-Done.
-
 Note: header files needed for using Lua library are automatically copied into `build/bin/{CONFIG}/include` directory. For Windows dll Visual Studio will also create an import library.
-
-## Use Lua in existing Premake5 project
-
-*Work in progress*
