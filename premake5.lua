@@ -21,6 +21,11 @@ workspace "Lua"
 
 	filter {}
 
+	-- MAKE_LIB - build Lua core with standard libraries
+	-- MAKE_LUAC - build Lua core (without libraries)
+	-- MAKE_LUA (default) - build Lua core with libraries and interpreter (main function)
+	defines { "MAKE_LIB" }
+
 	targetdir "build/bin/%{cfg.buildcfg}"
 	objdir "build/obj/%{cfg.buildcfg}/%{prj.name}"
 
